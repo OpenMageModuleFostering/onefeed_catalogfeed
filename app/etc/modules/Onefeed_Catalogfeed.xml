@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Onefeed_Catalogfeed>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Onefeed_Catalogfeed>
+    </modules>
+</config>

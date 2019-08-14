@@ -1,18 +1,18 @@
 <?xml version="1.0"?>
 <package>
     <name>Onefeed_CatalogFeed</name>
-    <version>0.1.0</version>
+    <version>0.1.1</version>
     <stability>stable</stability>
     <license>OSL v3.0</license>
     <channel>community</channel>
     <extends/>
     <summary>Export your product catalogue to integrate with the Onefeed feed management and optimisation service.</summary>
-    <description> Onefeed is a leading feed management and Google Shopping optimisation company. The Magento feed exporter allows for seamless integration into the Onefeed platform. The exporter uploads a fully comprehensive product datafeed into the FTP location of Onefeed. With a scheduler built in it&#x2019;s a very straight forward way of automating the delivery of your datafeed to Onefeed. Onefeed will optimise and management performance of your data on all shopping channels and most importantly Google Shopping. Onefeed is also a certified Google Partner which means your performance and management is in safe hands.</description>
-    <notes>Export your product catalogue to integrate with the Onefeed feed management and optimisation service.</notes>
+    <description>Onefeed is a leading feed management and Google Shopping optimisation company. The Magento feed exporter allows for seamless integration into the Onefeed platform. The exporter uploads a fully comprehensive product datafeed into the FTP location of Onefeed. With a scheduler built in it's a very straight forward way of automating the delivery of your datafeed to Onefeed. Onefeed will optimise and management performance of your data on all shopping channels and most importantly Google Shopping. Onefeed is also a certified Google Partner which means your performance and management is in safe hands.</description>
+    <notes>Bug Fix</notes>
     <authors><author><name>Onefeed</name><user>Onefeed</user><email>rich@onefeed.co.uk</email></author></authors>
-    <date>2016-03-09</date>
-    <time>15:51:51</time>
-    <contents><target name="magelocal"><dir name="Onefeed"><dir name="Catalogfeed"><dir name="Block"><dir name="Adminhtml"><file name="Button.php" hash="030eefe5a822f205963e7afc55f0b27d"/></dir></dir><dir name="Helper"><file name="Data.php" hash="15b58ec437058e8f4180a0618e7de574"/></dir><dir name="Model"><dir name="Adminhtml"><dir name="System"><dir name="Config"><dir name="Backend"><file name="Cron.php" hash="eab5b701d86d9d5940bc85e7bdedeb92"/></dir></dir></dir></dir><file name="Cron.php" hash="e7c2374610f4849491a22e05d646ed7f"/></dir><dir name="controllers"><dir name="Adminhtml"><file name="CatalogfeedbackendController.php" hash="1b24daded216da28a7ac5c3064b26b57"/></dir></dir><dir name="etc"><file name="adminhtml.xml" hash="edcb7b428b07f4b71b3bafbd2c66cc0e"/><file name="config.xml" hash="134b375c13f800e3164af3966fd7ac5c"/><file name="system.xml" hash="f328e7b15f0d863c5d38951b040f410e"/></dir></dir></dir><dir name="modules"><file name="Onefeed_Catalogfeed.xml" hash=""/></dir></target><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="template"><dir name="onefeed"><file name="button.phtml" hash="e4436369269b4af6045425b50f73089f"/></dir></dir></dir></dir></dir></target></contents>
+    <date>2016-10-06</date>
+    <time>13:04:02</time>
+    <contents><target name="magecommunity"><dir name="Onefeed"><dir name="Catalogfeed"><dir name="Block"><dir name="Adminhtml"><file name="Button.php" hash="030eefe5a822f205963e7afc55f0b27d"/></dir></dir><dir name="Helper"><file name="Data.php" hash="15b58ec437058e8f4180a0618e7de574"/></dir><dir name="Model"><dir name="Adminhtml"><dir name="System"><dir name="Config"><dir name="Backend"><file name="Cron.php" hash="eab5b701d86d9d5940bc85e7bdedeb92"/></dir></dir></dir></dir><file name="Cron.php" hash="e7c2374610f4849491a22e05d646ed7f"/></dir><dir name="controllers"><dir name="Adminhtml"><file name="CatalogfeedbackendController.php" hash="1b24daded216da28a7ac5c3064b26b57"/></dir></dir><dir name="etc"><file name="adminhtml.xml" hash="edcb7b428b07f4b71b3bafbd2c66cc0e"/><file name="config.xml" hash="134b375c13f800e3164af3966fd7ac5c"/><file name="system.xml" hash="f328e7b15f0d863c5d38951b040f410e"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Onefeed_Catalogfeed.xml" hash="2607152c31f1a68cacd4cd9bc4b6536b"/></dir></target><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="template"><dir name="onefeed"><file name="button.phtml" hash="e4436369269b4af6045425b50f73089f"/></dir></dir></dir></dir></dir></target></contents>
     <compatible/>
     <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php></required></dependencies>
 </package>
