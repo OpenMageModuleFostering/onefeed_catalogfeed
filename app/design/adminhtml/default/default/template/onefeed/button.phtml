@@ -1,0 +1,29 @@
+<script type="text/javascript">
+    //<![CDATA[
+    function run() {
+        new Ajax.Request('<?php echo $this->getAjaxIndexUrl() ?>', {
+            method:     'get',
+            onSuccess: function(transport){ 
+                if (transport.responseText="start"){
+                    $('check_button').disable();
+                    check();
+                }
+            }
+        });
+    }
+    function check(){
+        new Ajax.Request('<?php echo $this->getAjaxCheckUrl() ?>', {
+            method:     'get',
+            onSuccess: function(transport){ 
+                if (transport.responseText){
+                    $('check_button').enable();
+                    window.location.reload();
+                }
+            }
+        });
+        //setTimeout(function(){ check(); }, 5000);
+    }
+    //]]>
+</script>
+ 
+<?php echo $this->getButtonHtml() ?>

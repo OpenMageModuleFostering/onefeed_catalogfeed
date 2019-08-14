@@ -1,0 +1,165 @@
+<?xml version="1.0"?>
+<config>
+    <tabs>
+        <onefeed translate="label" module="catalogfeed">
+            <label>One Feed</label>
+            <sort_order>0</sort_order>
+        </onefeed>
+    </tabs>
+    <sections>
+        <onefeed_config translate="label" module="catalogfeed">
+            <label>One Feed Config</label>
+            <tab>onefeed</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>0</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>0</show_in_website>
+            <show_in_store>0</show_in_store>
+            <groups>
+
+                <onefeed_general translate="label">
+                    <label>General</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>100</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <enabled translate="label">
+                            <label>Enabled</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </enabled>
+                    </fields>
+                </onefeed_general>
+                <onefeed_ftp translate="label">
+                    <label>Onefeed FTP</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>200</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>0</show_in_website>
+                    <show_in_store>0</show_in_store>
+                    <fields>
+                        <username translate="label">
+                            <label>User Name</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <comment>Username</comment>
+                        </username>
+                        <password translate="label">
+                            <label>Password</label>
+                            <frontend_type>password</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <comment>Password</comment>
+                        </password>
+                    </fields>
+                </onefeed_ftp>
+                <onefeed_defaults>
+                    <label>Onefeed Defaults</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>300</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>0</show_in_website>
+                    <show_in_store>0</show_in_store>
+                    <fields>
+                        <excludeoutofstock translate="label">
+                            <label>Exclude Out Of Stock</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <comment>Remove Out Of Stock from FEED</comment>
+                        </excludeoutofstock>
+                        <includedisabled translate="label">
+                            <label>Include Disabled</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <comment>Include Disabled Products in FEED</comment>
+                        </includedisabled>
+                        <filename translate="label">
+                            <label>File Name</label>
+                            <frontend_type>text</frontend_type>
+
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <comment>Name of file to save feed</comment>
+                        </filename>
+                        <delimeter translate="label">
+                            <label>Delimeter</label>
+                            <frontend_type>text</frontend_type>
+
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <comment>delimeter for csv seprator</comment>
+                        </delimeter>
+                    </fields>
+                </onefeed_defaults>
+				<configurable_cron translate="label">
+                    <label>Cron Schedule</label>
+                    <sort_order>400</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>0</show_in_website>
+                    <show_in_store>0</show_in_store>
+                    <fields>
+                        <time translate="label">
+                            <label>Start Time</label>
+                            <frontend_type>time</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </time>
+                        <frequency translate="label">
+                            <label>Frequency</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_cron_frequency</source_model>
+                            <backend_model>catalogfeed/adminhtml_system_config_backend_cron</backend_model>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </frequency>
+                    </fields>
+                </configurable_cron>
+                <tools translate="label">
+                    <label>Export</label>
+                    <sort_order>500</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <check translate="label">
+                            <label>Export</label>
+                            <frontend_type>button</frontend_type>
+                            <frontend_model>Onefeed_Catalogfeed_Block_Adminhtml_Button</frontend_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </check>
+                    </fields>
+                </tools>
+            </groups>
+        </onefeed_config>
+    </sections>
+</config>

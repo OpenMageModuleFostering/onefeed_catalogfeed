@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/Onefeed_CatalogFeed",
+    "type": "magento-module",
+    "license": "OSL-v3.0",
+    "homepage": "",
+    "description": "Export your product catalogue to integrate with the Onefeed feed management and optimisation service.",
+    "authors": [
+    {
+        "name": "Onefeed",
+        "email": "rich@onefeed.co.uk"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}
